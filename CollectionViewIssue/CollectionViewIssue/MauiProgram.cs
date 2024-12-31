@@ -11,7 +11,7 @@ public static class MauiProgram
 			.UseMauiApp<App>()
 			.ConfigureMauiHandlers(handlers =>
 			{
-#if IOS
+#if IOS || MACCATALYST
     			handlers.AddHandler<Microsoft.Maui.Controls.CollectionView, Microsoft.Maui.Controls.Handlers.Items2.CollectionViewHandler2>();
 #endif
 			})
