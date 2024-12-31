@@ -41,8 +41,8 @@ public class DemoViewModel : INotifyPropertyChanged
 
 	public DemoViewModel()
 	{
-		Items.Add(new ItemGroup("Collection 1", new List<Items> { new Items { Name = "Item 1" }, new Items { Name = "Item 2" } }));
-		Items.Add(new ItemGroup("Collection 2", new List<Items> { new Items { Name = "Item 1" }, new Items { Name = "Item 2" } }));
+		Items.Add(new ItemGroup("Collection 1", new List<Items> { new Items { Name = "Item 1" }, new Items { Name = "Item 2" }, new Items { Name = "Item 3" } }));
+		Items.Add(new ItemGroup("Collection 2", new List<Items> { new Items { Name = "Item 1" }, new Items { Name = "Item 2" }, new Items { Name = "Item 3" } }));
 		Items.Add(new ItemGroup("Collection 3", new List<Items> { new Items { Name = "Item 1" }, new Items { Name = "Item 2" } }));
 
 

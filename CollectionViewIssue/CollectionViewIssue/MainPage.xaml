@@ -6,7 +6,7 @@
 
     <Grid RowDefinitions="*">
         <CollectionView Grid.Row="0"
-                        Background="Red"
+                        Background="Grey"
                         IsGrouped="True"
                         x:DataType="local:DemoViewModel"
                         ItemsSource="{Binding Items}"
@@ -19,13 +19,13 @@
                 <DataTemplate>
                     <Label Text="{Binding Name}"
                            x:DataType="local:Items"
-                           Background="Yellow"/>
+                           Background="Cornsilk"/>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
             <CollectionView.GroupHeaderTemplate>
                 <DataTemplate>
                     <Label Text="GH"
-                           Background="Green"/>
+                           Background="YellowGreen"/>
                 </DataTemplate>
             </CollectionView.GroupHeaderTemplate>
         </CollectionView>
