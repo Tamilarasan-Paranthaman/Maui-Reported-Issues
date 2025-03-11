@@ -3,28 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp1.MainPage">
 
-
     <VerticalStackLayout
-            Padding="30,0"
-            Spacing="25">
-    
-        <Label x:Name="NavigatingLabel"
-               Text="Navigating event : Not Called"
-               FontSize="16"
-               VerticalOptions="Center"
-               HorizontalOptions="Center"/>
-        
-        <Label x:Name="NavigatedLabel"
-               Text="Navigated event : Not Called"
-               FontSize="16"
-               VerticalOptions="Center"
-               HorizontalOptions="Center"/>
-
+              Padding="30,0"
+              Spacing="25">
         <WebView WidthRequest="600"
-                 x:Name="webView"
-                 Source="https://learn.microsoft.com/dotnet/maui"
-                 Navigated="webView_Navigated"
-                 Navigating="webView_Navigating"
-                 HeightRequest="300"/>
+                       x:Name="webView"
+                       Source="https://learn.microsoft.com/dotnet/maui"
+                       Navigated="webView_Navigated"
+                       Navigating="webView_Navigating"
+                       HeightRequest="600"/>
     </VerticalStackLayout>
 </ContentPage>

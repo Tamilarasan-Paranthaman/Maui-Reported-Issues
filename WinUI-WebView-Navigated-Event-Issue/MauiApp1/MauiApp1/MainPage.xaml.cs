@@ -11,13 +11,13 @@ namespace MauiApp1
 
         private void webView_Navigated(object sender, WebNavigatedEventArgs e)
         {
-            NavigatedLabel.Text = "Navigated event : Called";
+            Debug.WriteLine("The Navigated event was called");
         }
 
         private void webView_Navigating(object sender, WebNavigatingEventArgs e)
         {
             e.Cancel = true;
-            NavigatingLabel.Text = "Navigating event : Called";
+            Debug.WriteLine("The Navigating event was called ");
         }
     }
 }
