@@ -1,15 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SearchHandlerClearPlaceholderIcon"
              x:Class="SearchHandlerClearPlaceholderIcon.MainPage">
     <Shell.SearchHandler>
         <SearchHandler
+            x:DataType="local:SearchViewModel"
             Placeholder="{Binding SearchPlaceholder}"
             ClearPlaceholderEnabled="True"
             ClearPlaceholderCommand="{Binding ClearPlaceholderCommand}"
             ClearPlaceholderIcon="bookmark.png"/>
     </Shell.SearchHandler>
-    
+
 
     <ScrollView>
         <VerticalStackLayout
@@ -19,18 +21,18 @@
                 Source="dotnet_bot.png"
                 HeightRequest="185"
                 Aspect="AspectFit"
-                SemanticProperties.Description="dot net bot in a hovercraft number nine" />
+                SemanticProperties.Description="dot net bot in a hovercraft number nine"/>
 
             <Label
                 Text="Hello, World!"
                 Style="{StaticResource Headline}"
-                SemanticProperties.HeadingLevel="Level1" />
+                SemanticProperties.HeadingLevel="Level1"/>
 
             <Label
                 Text="Welcome to &#10;.NET Multi-platform App UI"
                 Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"/>
 
         </VerticalStackLayout>
     </ScrollView>
